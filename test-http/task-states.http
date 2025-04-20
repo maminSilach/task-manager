@@ -1,0 +1,22 @@
+
+// Создание task states на проект
+###
+POST http://localhost:8080/api/project/2/task-states?
+    name=my task states
+
+// Все task states у конкретного проекта
+###
+GET http://localhost:8080/api/project/2/task-states
+
+
+// $task_states_id + новое имя
+###
+PATCH http://localhost:8080/api/project/task-states/1?
+    name=new name
+
+
+// $task_states_id
+###
+DELETE http://localhost:8080/api/project/task-states/1
+
+

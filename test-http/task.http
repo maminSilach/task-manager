@@ -1,0 +1,21 @@
+// task states id + имя + описание задачи
+
+###
+POST http://localhost:8080/api/project/2/task?
+    name=new task
+
+<> 2025-04-20T163159.200.json
+
+// task id (опционально)
+###
+GET http://localhost:8080/api/project/task?
+    id=1
+
+// task id + новое имя
+###
+PATCH http://localhost:8080/api/project/task/1?
+    name=new task name
+
+// task id
+###
+DELETE http://localhost:8080/api/project/task/1

@@ -1,0 +1,18 @@
+###
+POST http://localhost:8080/api/project?
+    name=test project
+
+###
+PATCH http://localhost:8080/api/project/1?
+    name=edited test poject
+
+
+###
+GET http://localhost:8080/api/project?
+    name=edited test poject
+
+###
+GET http://localhost:8080/api/project
+
+###
+DELETE http://localhost:8080/api/project/1
