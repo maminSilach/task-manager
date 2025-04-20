@@ -12,6 +12,8 @@ services:
       - postgres
 
   tracker:
+    depends_on:
+      - postgres
     build:
       context: .
       dockerfile: Dockerfile
