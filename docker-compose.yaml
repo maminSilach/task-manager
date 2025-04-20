@@ -11,6 +11,17 @@ services:
     networks:
       - postgres
 
+  tracker:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    environment:
+      DB_URL: postgres
+      DB_PASS: postgres_password
+      DB_USER: postgres_user
+    networks:
+      - postgres
+
 
 networks:
   postgres:
