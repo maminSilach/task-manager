@@ -21,6 +21,8 @@ services:
       DB_URL: postgres
       DB_PASS: postgres_password
       DB_USER: postgres_user
+    ports:
+      - "8080:8080"
     networks:
       - postgres
 
